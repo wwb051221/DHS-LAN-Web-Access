@@ -1,0 +1,46 @@
+name: Bug report
+description: 报告一个可复现的问题
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请尽量填写完整，便于定位问题。
+  - type: input
+    id: versions
+    attributes:
+      label: 版本
+      description: DeepSeek Harness 版本、插件版本、Windows 版本
+      placeholder: "Harness 0.2.1-rc.3 · 插件 1.0.0 · Windows 11 24H2"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开 ...
+        2. 输入 ...
+        3. 看到 ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+      description: 有报错信息或插件列表中的错误状态时请一并贴出
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 其他信息
+      description: 网络环境（防火墙/杀软/VPN）、是否可通过 `127.0.0.1:端口/_lan-access` 打开面板等
+    validations:
+      required: false

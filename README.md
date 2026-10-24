@@ -29,7 +29,7 @@
 
 ### 1. 获取插件
 
-- 从 [Releases](../../releases) 下载 `dsh-lan-access-v1.0.0.zip`，解压到固定目录（例如 `D:\dsh-plugins\dsh-lan-access`）；
+- 从 [Releases](https://github.com/wwb051221/DHS-LAN-Web-Access/releases) 下载 `dsh-lan-access-v1.0.0.zip`，解压到固定目录（例如 `D:\dsh-plugins\dsh-lan-access`）；
 - 或直接克隆本仓库后使用仓库根目录。
 
 ### 2. 安装
@@ -119,8 +119,10 @@ DeepSeek Harness 的内置网页服务只监听 `127.0.0.1`，并用 Host/Origin
 ## 开发与验证
 
 - 运行时：Node.js 内置模块（`http`、`https`、`net`、`crypto`、`os`、`fs`）；
-- CI 对 `index.js` 做语法检查，并校验清单、补丁与必需资源；
+- 本地校验：`node --check index.js`，并确保 `package.json` 的 `dsh.bundle.patch` 指向存在的补丁；
 - 本地已验证：密码登录、认证后页面/API/WebSocket、改密吊销、异常连接压力测试、插件启停端口释放。
+
+详细安装、配置、排障见 [docs/安装与使用说明.md](docs/安装与使用说明.md)。
 
 ---
 
