@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "LAN Web Access",
+    "description": "Lets other devices on the local network open the DeepSeek Harness web GUI through a password-protected HTTP/WebSocket proxy on a configurable port."
+  }
+}

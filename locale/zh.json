@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "局域网网页访问",
+    "description": "通过带密码保护的 HTTP/WebSocket 反向代理，让局域网内的其他设备经指定端口访问 DeepSeek Harness 网页界面。"
+  }
+}

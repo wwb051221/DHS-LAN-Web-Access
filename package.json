@@ -1,0 +1,42 @@
+{
+  "name": "@local/dsh-lan-access",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Password-protected LAN web access for the DeepSeek Harness Web GUI",
+  "type": "module",
+  "license": "MIT",
+  "author": "wwb051221",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwb051221/DHS-LAN-Web-Access.git"
+  },
+  "homepage": "https://github.com/wwb051221/DHS-LAN-Web-Access#readme",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "lan",
+    "reverse-proxy",
+    "websocket",
+    "password-auth"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
