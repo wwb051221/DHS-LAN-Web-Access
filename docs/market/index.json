@@ -1,0 +1,41 @@
+{
+  "format": 1,
+  "title": {
+    "en": "DHS LAN Web Access",
+    "zh": "DSH 局域网网页访问"
+  },
+  "description": {
+    "en": "Password-protected LAN access to the DeepSeek Harness web GUI.",
+    "zh": "通过密码登录，让局域网内的其他设备访问 DeepSeek Harness 网页界面。"
+  },
+  "plugins": [
+    {
+      "name": "@local/dsh-lan-access",
+      "title": {
+        "en": "LAN Web Access",
+        "zh": "局域网网页访问"
+      },
+      "description": {
+        "en": "Exposes the DeepSeek Harness web GUI to other devices on the local network through a password-protected HTTP/WebSocket reverse proxy. Sessions are revoked whenever the access password changes.",
+        "zh": "通过带密码保护的 HTTP/WebSocket 反向代理，让局域网内的手机、平板和其他电脑访问 DeepSeek Harness 网页界面；修改密码后旧设备会话立即失效。"
+      },
+      "icon": "icons/dsh-lan-access.svg",
+      "author": "wwb051221",
+      "homepage": "https://github.com/wwb051221/DHS-LAN-Web-Access#readme",
+      "repository": {
+        "url": "https://github.com/wwb051221/DHS-LAN-Web-Access"
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1792857942,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/wwb051221/DHS-LAN-Web-Access",
+            "commit": "0f2af02284ba7006a53c58977e8398ba039c701b"
+          }
+        }
+      ]
+    }
+  ]
+}
