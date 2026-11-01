@@ -122,11 +122,24 @@ DeepSeek Harness 的内置网页服务只监听 `127.0.0.1`，并用 Host/Origin
 ├── index.js                  插件实现（代理 / 登录 / 面板 / 会话吊销）
 ├── locale/                   中英文显示名与描述
 ├── icon.svg                  插件图标
-├── docs/安装与使用说明.md      详细使用与排障文档
-├── .github/workflows/        CI：语法与清单校验
+├── docs/
+│   ├── 安装与使用说明.md       详细使用与排障文档
+│   ├── EXTENSION.md           扩展信息（能力、分发、配置、安全边界）
+│   ├── GITHUB_USER.md         维护者 GitHub 账号信息
+│   └── market/index.json      插件索引（DSH「发现」用）
+├── .github/                  Issue / PR 模板
 ├── CHANGELOG.md
 └── LICENSE
 ```
+
+---
+
+## 相关文档
+
+- [扩展信息](docs/EXTENSION.md)：能力、工作原理、分发方式、配置与安全边界
+- [安装与使用说明](docs/安装与使用说明.md)：安装、面板、改密、防火墙、常见问题
+- [维护者 GitHub 信息](docs/GITHUB_USER.md)：账号与项目归属
+- [插件索引](docs/market/index.json)：DSH「发现」页的索引源文件
 
 ---
 
